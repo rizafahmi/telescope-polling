@@ -14,6 +14,10 @@ Package.onUse(function(api) {
   api.versionsFrom('1.1.0.3');
   api.addFiles('telescope-polling.js');
   api.addFiles('telescope-polling.css');
+  api.addFiles([
+    'lib/client/templates/polling/polling_submit.js',
+    'lib/client/templates/polling/polling_submit.html'
+  ], ['client', 'server']);
 });
 
 Package.onTest(function(api) {
