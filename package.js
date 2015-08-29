@@ -11,6 +11,7 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
+  api.use('templating', 'client');
   api.versionsFrom('1.1.0.3');
   api.addFiles('telescope-polling.js');
   api.addFiles('telescope-polling.css');
@@ -18,6 +19,8 @@ Package.onUse(function(api) {
     'lib/client/templates/polling/polling_submit.js',
     'lib/client/templates/polling/polling_submit.html'
   ], ['client', 'server']);
+  if (api.export)
+    api.export('meteorPollingSubmit');
 });
 
 Package.onTest(function(api) {
