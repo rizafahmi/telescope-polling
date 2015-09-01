@@ -26,7 +26,8 @@ Package.onUse(function(api) {
     'lib/collections/pollings.js'
   ], ['client', 'server']);
   api.addFiles([
-    'lib/server/publications/pollings.js'
+    'lib/server/publications/pollings.js',
+    'lib/server/fixtures.js'
     ], ['server']);
   if (api.export) {
     api.export('meteorPollingSubmit');
