@@ -12,15 +12,22 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.use('templating', 'client');
+  api.use(['iron:router@1.0.9'], 'client', {weak: false, unordered: false});
   api.versionsFrom('1.1.0.3');
 
   api.addFiles('telescope-polling.js');
   api.addFiles('telescope-polling.css');
   api.addFiles([
+    'lib/routes.js'
+  ], ['client']);
+  api.addFiles([
     'lib/client/templates/polling/polling_submit.js',
     'lib/client/templates/polling/polling_submit.html',
-    'lib/collections/polling.js'
+    'lib/collections/pollings.js'
   ], ['client', 'server']);
+  api.addFiles([
+    'lib/server/publications/pollings.js'
+    ], ['server']);
   if (api.export) {
     api.export('meteorPollingSubmit');
     api.export('Pollings', ['server', 'client']);
