@@ -38,11 +38,12 @@
 
 
             <div class="post-meta-item" aria-live="off">
-              <span class="points">2</span>
-              <span class="unit">points</span>
-              <span class="post-time">a month ago</span>
+              <!-- <span class="points">2</span> -->
+              <!-- <span class="unit">points</span> -->
+              <!-- <span class="post&#45;time">a month ago</span> -->
 
-              | <a href="/posts/k76jwzQtwifNZsYn6/edit" class="edit-link goto-edit">Edit</a>
+              |
+              <!-- | <a href="{{ pathFor 'telescopePollDetail' id=_id }}" class="edit&#45;link goto&#45;edit">Edit</a> -->
 
             </div>    
 
@@ -54,9 +55,9 @@
 
 
             <div class="post-meta-item">
-              <a class="comments-link" href="/posts/k76jwzQtwifNZsYn6/how-to-use-this-demo">
-                <span class="comments-count">0</span>
-                <span class="comments-action">Comments</span>
+              <a class="comments-link" href="{{ pathFor 'telescopePollDetail' id=_id }}">
+                <span class="comments-count">{{ getTotalVotes _id }}</span>
+                <span class="comments-action">Votes</span>
               </a>
             </div>    
 
@@ -70,21 +71,14 @@
             <div class="post-meta-item post-admin" aria-live="off">
 
 
-              <span>|</span>
-              <a href="#" class="approve-link goto-edit">approve</a>
-
-
-              <span>|</span>
-              <span>score: 0.005, clicks: 0, views: 14</span>
-
-            </div>    
+            </div>
 
 
 
 
           </div>
-        </div> 
-      </div>    
+        </div>
+      </div>
 
 
 
@@ -130,7 +124,7 @@
 
 
       <div class="post-discuss post-module">
-        <a class="discuss-link go-to-comments action" href="/posts/k76jwzQtwifNZsYn6/how-to-use-this-demo" title="Discuss">
+        <a class="discuss-link go-to-comments action" href="{{ pathFor 'telescopePollDetail' id=_id }}" title="Vote">
           <i class="icon fa fa-comment-o icon-comment" aria-hidden="true"></i>
           <span class="action-count">{{ getTotalVotes this._id }}</span>
           <span class="sr-only"> Comments</span>
