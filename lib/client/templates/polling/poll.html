@@ -27,8 +27,8 @@
 
 
             <div class="post-meta-item">
-              <a class="post-author" href="/users/citizenlab">CitizenLab</a>
-            </div>    
+              <a class="post-author" href="{{ pathFor 'user_profle' _idOrSlug=authr }}">{{ titleCase author }}</a>
+            </div>
 
 
 
@@ -106,12 +106,12 @@
 
 
 
+
+
+
       <div class="post-avatars post-module" aria-hidden="true" aria-live="off">
-        <a class="avatar-link avatar-small author-avatar" href="/users/citizenlab" title="CitizenLab">
-          <div class="avatar avatar-circle">
-            <img class="avatar-image" src="https://secure.gravatar.com/avatar/b9a11a50ed3acb04d48eccd9e0395f3e?default=404&amp;size=200" alt="avatar" onerror="this.style.display='none';">
-            <span class="avatar-initials">C</span>
-          </div>
+        <a class="avatar-link avatar-small author-avatar" href="{{ pathFor 'user_profile' _idOrSlug=author }}" title="{{ author }}">
+          {{> avatar userId=userId shape="circle"}}
         </a>
 
       </div>    
