@@ -24,6 +24,7 @@ Package.onUse(function(api) {
     'lib/client/templates/polling/polling_submit.js',
     'lib/client/templates/polling/polls.js',
     'lib/client/templates/polling/poll.js',
+    'lib/client/templates/polling/poll.css',
     'lib/client/helpers.js',
     'lib/routes.js'
   ], ['client']);
