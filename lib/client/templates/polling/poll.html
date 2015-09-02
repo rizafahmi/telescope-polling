@@ -1,82 +1,175 @@
 <template name="telescopePoll">
-  <div class="single-post grid">
-    <div class="posts posts-list">
-      <div class="zone-wrapper post author-citizenlab no-thumbnail" data-zone="postComponents" id="k76jwzQtwifNZsYn6">
-        <div class="post-info">
-          <h3 class="post-heading">
-            <div class="zone-wrapper" data-zone="postHeading">
-              <a href="{{ pathFor 'telescopePollDetail' id=_id }}" class="post-title"><i class="fa fa-lightbulb-o"></i> {{ question }}</a>
-            </div>
-          </h3>
-          <div class="post-body" aria-live="polite">
-            <p class="poll" data-id="{{ _id }}">
-              {{#each indexedArray choices}}
+  <div class="zone-wrapper post author-citizenlab no-thumbnail" data-zone="postComponents" id="">
 
-                <a class="vote btn btn-primary btn-block" href="#" data-id="{{ _index }}">
-                  <span class="votes pull-right">{{ votes }}</span>
-                  <span class="text">{{ text }}</span>
-                </a>
 
-              {{/each}}
+    <div class="post-info">
+      <h3 class="post-heading">
+        <div class="zone-wrapper" data-zone="postHeading">
 
-            </p>
+
+
+          <a href="{{ pathFor 'telescopePollDetail' id=_id }}" class="post-title"><i class="fa fa-bar-chart-o"></i> {{ question }}</a>
+
+
+
+        </div>
+      </h3>
+
+
+      <div class="post-body " aria-live="polite"></div>
+
+
+        <div class="post-meta">
+          <div class="zone-wrapper" data-zone="postMeta">
+
+
+
+
+
+            <div class="post-meta-item">
+              <a class="post-author" href="/users/citizenlab">CitizenLab</a>
+            </div>    
+
+
+
+
+
+
+
+
+            <div class="post-meta-item" aria-live="off">
+              <span class="points">2</span>
+              <span class="unit">points</span>
+              <span class="post-time">a month ago</span>
+
+              | <a href="/posts/k76jwzQtwifNZsYn6/edit" class="edit-link goto-edit">Edit</a>
+
+            </div>    
+
+
+
+
+
+
+
+
+            <div class="post-meta-item">
+              <a class="comments-link" href="/posts/k76jwzQtwifNZsYn6/how-to-use-this-demo">
+                <span class="comments-count">0</span>
+                <span class="comments-action">Comments</span>
+              </a>
+            </div>    
+
+
+
+
+
+
+
+
+            <div class="post-meta-item post-admin" aria-live="off">
+
+
+              <span>|</span>
+              <a href="#" class="approve-link goto-edit">approve</a>
+
+
+              <span>|</span>
+              <span>score: 0.005, clicks: 0, views: 14</span>
+
+            </div>    
+
+
+
+
           </div>
-          <div class="post-meta">
-            <div class="zone-wrapper" data-zone="postMeta">
-              <div class="post-meta-item">
-                <a class="post-author" href="/users/citizenlab">CitizenLab</a>
-              </div>
-              <div class="post-meta-item" aria-live="off">
-                <span class="post-time">a month ago</span>
-                | <a href="/posts/k76jwzQtwifNZsYn6/edit" class="edit-link goto-edit">Edit</a>
-              </div>
-              <div class="post-meta-item">
-                <a class="comments-link" href="/posts/k76jwzQtwifNZsYn6/how-to-use-this-demo">
-                  <span class="comments-count">0</span>
-                  <span class="comments-action">Comments</span>
-                </a>
-              </div>
-              <div class="post-meta-item post-admin" aria-live="off">
-                <span>|</span>
-                <a href="#" class="approve-link goto-edit">approve</a>
-                <span>|</span>
-                <span>score: 0.005, clicks: 0, views: 14</span>
-              </div>
-            </div>
+        </div> 
+      </div>    
+
+
+
+
+
+
+
+
+      <div class="post-share post-module">
+        <a href="#" class="share-link action" title="Share">
+          <i class="icon fa fa-share-square-o icon-share" aria-hidden="true"></i>
+        </a>
+        <div class="share-options hidden">
+          <a class="share-option-facebook" href="https://www.facebook.com/sharer/sharer.php?u=/posts/k76jwzQtwifNZsYn6/how-to-use-this-demo" target="_blank"><i class="icon fa fa-facebook-square icon-facebook" aria-hidden="true"></i></a>
+          <a class="share-option-twitter" href="//twitter.com/intent/tweet?text=How%20to%20use%20this%20demo&amp;url=/posts/k76jwzQtwifNZsYn6/how-to-use-this-demo&amp;via=citizenlabco" target="_blank"><i class="icon fa fa-twitter icon-twitter" aria-hidden="true"></i></a>
+          <a class="share-option-linkedin" href="//www.linkedin.com/shareArticle?mini=true&amp;url=/posts/k76jwzQtwifNZsYn6/how-to-use-this-demo&amp;summary=How%20to%20use%20this%20demo" target="_blank"><i class="icon fa fa-linkedin-square icon-linkedin" aria-hidden="true"></i></a>
+          <a class="share-option-google" href="https://plus.google.com/share?url=/posts/k76jwzQtwifNZsYn6/how-to-use-this-demo" target="_blank"><i class="icon fa fa-google-plus icon-googleplus" aria-hidden="true"></i></a>
+        </div>
+      </div>    
+
+
+
+
+
+
+
+
+      <div class="post-avatars post-module" aria-hidden="true" aria-live="off">
+        <a class="avatar-link avatar-small author-avatar" href="/users/citizenlab" title="CitizenLab">
+          <div class="avatar avatar-circle">
+            <img class="avatar-image" src="https://secure.gravatar.com/avatar/b9a11a50ed3acb04d48eccd9e0395f3e?default=404&amp;size=200" alt="avatar" onerror="this.style.display='none';">
+            <span class="avatar-initials">C</span>
           </div>
-        </div>
-        <div class="post-share post-module">
-          <a href="#" class="share-link action" title="Share">
-            <i class="icon fa fa-share-square-o icon-share" aria-hidden="true"></i>
-          </a>
-          <div class="share-options hidden">
-            <a class="share-option-facebook" href="https://www.facebook.com/sharer/sharer.php?u=/posts/k76jwzQtwifNZsYn6/how-to-use-this-demo" target="_blank"><i class="icon fa fa-facebook-square icon-facebook" aria-hidden="true"></i></a>
-            <a class="share-option-twitter" href="//twitter.com/intent/tweet?text=How%20to%20use%20this%20demo&amp;url=/posts/k76jwzQtwifNZsYn6/how-to-use-this-demo&amp;via=citizenlabco" target="_blank"><i class="icon fa fa-twitter icon-twitter" aria-hidden="true"></i></a>
-            <a class="share-option-linkedin" href="//www.linkedin.com/shareArticle?mini=true&amp;url=/posts/k76jwzQtwifNZsYn6/how-to-use-this-demo&amp;summary=How%20to%20use%20this%20demo" target="_blank"><i class="icon fa fa-linkedin-square icon-linkedin" aria-hidden="true"></i></a>
-            <a class="share-option-google" href="https://plus.google.com/share?url=/posts/k76jwzQtwifNZsYn6/how-to-use-this-demo" target="_blank"><i class="icon fa fa-google-plus icon-googleplus" aria-hidden="true"></i></a>
-          </div>
-        </div>
-        <div class="post-avatars post-module" aria-hidden="true" aria-live="off">
-          <a href="/users/citizenlab" title="CitizenLab" class="avatar-link avatar-small author-avatar">
-            <div class="avatar avatar-circle">
-              <img class="avatar-image" src="https://secure.gravatar.com/avatar/b9a11a50ed3acb04d48eccd9e0395f3e?default=404&amp;size=200" alt="avatar" onerror="this.style.display='none';">
-              <span class="avatar-initials">C</span>
-            </div>
-          </a>
-        </div>
-        <div class="post-discuss post-module">
-          <a class="discuss-link go-to-comments action" href="/posts/k76jwzQtwifNZsYn6/how-to-use-this-demo" title="Discuss">
-            <i class="icon fa fa-comment-o icon-comment" aria-hidden="true"></i>
-            <span class="action-count">0</span>
-            <span class="sr-only"> Comments</span>
-          </a>
-        </div>
-        <div class="post-actions post-module">
-          <a class="toggle-actions-link mobile-only" href="#">
-            <i class="icon fa fa-ellipsis-h icon-more icon-circle" aria-hidden="true"></i>
-          </a>
-        </div>
-      </div>
+        </a>
+
+      </div>    
+
+
+
+
+
+
+
+
+      <div class="post-discuss post-module">
+        <a class="discuss-link go-to-comments action" href="/posts/k76jwzQtwifNZsYn6/how-to-use-this-demo" title="Discuss">
+          <i class="icon fa fa-comment-o icon-comment" aria-hidden="true"></i>
+          <span class="action-count">{{ getTotalVotes this._id }}</span>
+          <span class="sr-only"> Comments</span>
+        </a>
+      </div>    
+
+
+
+
+
+
+
+
+      <div class="post-actions post-module">
+        <a class="toggle-actions-link mobile-only" href="#">
+          <i class="icon fa fa-ellipsis-h icon-more icon-circle" aria-hidden="true"></i>
+        </a>
+      </div>    
+
+
+
+
     </div>
-  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </template>

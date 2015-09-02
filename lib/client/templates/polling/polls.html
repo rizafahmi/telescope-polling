@@ -1,5 +1,9 @@
 <template name="telescopePolls">
-  {{#each polls}}
-    {{> telescopePoll}}
-  {{/each}}
+  <div class="posts-wrapper grid">
+    <div class="posts list posts-grid" aria-live="polite">
+      {{#each polls}}
+        {{> telescopePoll}}
+      {{/each}}
+    </div>
+  </div>
 </template>
