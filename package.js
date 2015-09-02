@@ -18,19 +18,23 @@ Package.onUse(function(api) {
   api.addFiles('telescope-polling.js');
   api.addFiles('telescope-polling.css');
   api.addFiles([
+    'lib/client/templates/polling/polling_submit.html',
+    'lib/client/templates/polling/polls.html',
+    'lib/client/templates/polling/poll.html',
+    'lib/client/templates/polling/polling_submit.js',
+    'lib/client/templates/polling/polls.js',
+    'lib/client/helpers.js',
     'lib/routes.js'
   ], ['client']);
   api.addFiles([
-    'lib/client/templates/polling/polling_submit.js',
-    'lib/client/templates/polling/polling_submit.html',
-    'lib/collections/pollings.js'
+    'lib/collections/pollings.js',
   ], ['client', 'server']);
   api.addFiles([
     'lib/server/publications/pollings.js',
     'lib/server/fixtures.js'
     ], ['server']);
   if (api.export) {
-    api.export('meteorPollingSubmit');
+    api.export('telescopePollingSubmit');
     api.export('Pollings', ['server', 'client']);
   }
 });

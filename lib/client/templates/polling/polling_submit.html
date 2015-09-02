@@ -1,4 +1,81 @@
 <template name="telescopePollingSubmit">
-  <h2>Submit Polling</h2>
+  <div class="zone-wrapper top" data-zone="top"></div>
+  
+  <div class="form-page polling-submit">
+    <div class="grid grid-module">
+      
+      <form id="submitPostForm" class="form-horizontal" novalidate="novalidate">
+        
+        <div class="form-group" data-required="true">
+          
+          <label class="control-label">Questions</label>
+          
+          <div class="controls">
+            
+            <input type="text" placeholder="Your Question" name="title" required="required" maxlength="120" class="form-control">    
+
+            <span class="help-block"></span>
+          </div>
+        </div>    
+        
+        
+        <div class="form-group" data-required="true">
+          
+          <label class="control-label">Choice #1</label>
+          
+          <div class="controls">
+
+            <input type="text" name="choice1" class="form-control" placeholder="Choice #1">
+ 
+            <span class="help-block"></span>
+          </div>
+        </div>    
+        
+        <div class="form-group" data-required="false">
+          
+          <label class="control-label">Choice #2</label>
+          
+          <div class="controls">
+
+            <input type="text" name="choice2" class="form-control" placeholder="Choice #2">
+ 
+            <span class="help-block"></span>
+          </div>
+        </div>    
+        
+        <div class="form-group" data-required="false">
+          
+          <label class="control-label">Choice #3</label>
+          
+          <div class="controls">
+
+            <input type="text" name="choice3" class="form-control" placeholder="Choice #3">
+ 
+            <span class="help-block"></span>
+          </div>
+        </div>    
+        
+
+        
+        <div class="form-group">
+          <div></div>
+          <div class="controls">
+            <button type="submit" class="btn btn-primary">
+              
+              Submit
+              
+            </button>
+          </div>
+        </div>
+        
+
+        
+      </form>
+      
+      
+      
+    </div>
+  </div>
+  
   
 </template>
