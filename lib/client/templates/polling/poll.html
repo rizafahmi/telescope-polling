@@ -9,11 +9,10 @@
             </div>
           </h3>
           <div class="post-body" aria-live="polite">
-            <p>
+            <p class="poll" data-id="{{ _id }}">
               {{#each indexedArray choices}}
 
-                <a class="vote btn btn-warning btn-block" href="#" data-id="{{_id}}">
-                  {{ _index }}
+                <a class="vote btn btn-primary btn-block" href="#" data-id="{{ _index }}">
                   <span class="votes pull-right">{{ votes }}</span>
                   <span class="text">{{ text }}</span>
                 </a>
