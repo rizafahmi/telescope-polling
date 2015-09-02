@@ -1,11 +1,12 @@
-<template name="telescopePoll">
+<template name="telescopePollDetail">
+  {{#with poll}}
   <div class="single-post grid">
     <div class="posts posts-list">
       <div class="zone-wrapper post author-citizenlab no-thumbnail" data-zone="postComponents" id="k76jwzQtwifNZsYn6">
         <div class="post-info">
           <h3 class="post-heading">
             <div class="zone-wrapper" data-zone="postHeading">
-              <a href="{{ pathFor 'telescopePollDetail' id=_id }}" class="post-title"><i class="fa fa-lightbulb-o"></i> {{ question }}</a>
+              <a href="#" class="post-title"><i class="fa fa-lightbulb-o"></i> {{ question }}</a>
             </div>
           </h3>
           <div class="post-body" aria-live="polite">
@@ -79,4 +80,5 @@
       </div>
     </div>
   </div>
+  {{/with}}
 </template>
