@@ -35,6 +35,7 @@ Package.onUse(function(api) {
   ], ['client', 'server']);
   api.addFiles([
     'lib/server/publications/pollings.js',
+    'lib/server/methods.js',
     'lib/server/fixtures.js'
     ], ['server']);
   if (api.export) {
