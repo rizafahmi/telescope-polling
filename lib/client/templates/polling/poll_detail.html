@@ -17,7 +17,9 @@
               {{#each indexedArray choices}}
 
               <a class="vote btn btn-primary btn-block {{disabled}}" href="#" data-id="{{ _index }}">
+                {{#if disabled}}
                   <span class="votes pull-right">{{ votes }}</span>
+                {{/if}}
                   <span class="text">{{ text }}</span>
                 </a>
 

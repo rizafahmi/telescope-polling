@@ -126,7 +126,7 @@
       <div class="post-discuss post-module">
         <a class="discuss-link go-to-comments action" href="{{ pathFor 'telescopePollDetail' id=_id }}" title="Vote">
           <i class="icon fa fa-comment-o icon-comment" aria-hidden="true"></i>
-          <span class="action-count">{{ getTotalVotes this._id }}</span>
+          <span class="action-count">{{ this.voteCount }}</span>
           <span class="sr-only"> Comments</span>
         </a>
       </div>    
