@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'rizafahmi:telescope-polling',
+  name: 'riza:telescope-polling',
   version: '0.0.1',
   // Brief, one-line summary of the package.
   summary: 'Telescope Polling Package',
