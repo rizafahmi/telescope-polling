@@ -14,9 +14,9 @@ Package.onUse(function(api) {
   api.use('templating', 'client');
   api.use(['iron:router@1.0.9'], 'client', {weak: false, unordered: false});
   api.use([
-      
       'aldeed:autoform@5.4.1',
       'aldeed:collection2@2.3.3',
+      'telescope:messages@0.23.0'
   ]);
   api.versionsFrom('1.1.0.3');
 
