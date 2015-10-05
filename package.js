@@ -36,10 +36,8 @@ Package.onUse(function(api) {
     'lib/routes.js'
   ], ['client']);
   api.addFiles([
-    'lib/collections/pollings.js',
   ], ['client', 'server']);
   api.addFiles([
-    'lib/server/publications/pollings.js',
     'lib/server/methods.js',
     'lib/server/fixtures.js'
     ], ['server']);
