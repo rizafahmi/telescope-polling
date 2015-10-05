@@ -16,7 +16,8 @@ Package.onUse(function(api) {
   api.use([
       'aldeed:autoform@5.4.1',
       'aldeed:collection2@2.3.3',
-      'telescope:messages@0.23.0'
+      'telescope:messages@0.23.0',
+      'telescope:posts@0.23.0'
   ]);
   api.versionsFrom('1.1.0.3');
 
