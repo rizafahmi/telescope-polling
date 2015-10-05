@@ -37,6 +37,7 @@ Package.onUse(function(api) {
     'lib/routes.js'
   ], ['client']);
   api.addFiles([
+    'lib/posts.js'
   ], ['client', 'server']);
   api.addFiles([
     'lib/server/methods.js',
