@@ -1,6 +1,6 @@
 Package.describe({
   name: 'riza:telescope-polling',
-  version: '0.1.3',
+  version: '0.1.5',
   // Brief, one-line summary of the package.
   summary: 'Telescope Polling Package',
   // URL to the Git repository containing the source code for this package.
@@ -16,7 +16,8 @@ Package.onUse(function(api) {
   api.use([
       'aldeed:autoform@5.4.1',
       'aldeed:collection2@2.3.3',
-      'telescope:messages@0.23.0'
+      'telescope:messages@0.23.0',
+      'telescope:posts@0.23.0'
   ]);
   api.versionsFrom('1.1.0.3');
 
@@ -36,11 +37,9 @@ Package.onUse(function(api) {
     'lib/routes.js'
   ], ['client']);
   api.addFiles([
-    'lib/collections/pollings.js',
+    'lib/posts.js'
   ], ['client', 'server']);
   api.addFiles([
-    'lib/server/publications/pollings.js',
-    'lib/server/methods.js',
     'lib/server/fixtures.js'
     ], ['server']);
   if (api.export) {
